@@ -13,13 +13,16 @@ trusted_clients =
 	192.168.0.0/16
 	FE80::/10
 	::1/128
-	100.77.128.108
+	100.121.250.95
+	192.168.1.1
 cors_domains = 
 	http://*.lan
 	http://*.local
 	https://my.mainsail.xyz
 	http://my.mainsail.xyz
 	http://voron.local
+	http://voron.ratonniere.fr
+	https://voron.ratonniere.fr
 
 [database]
 
@@ -57,14 +60,6 @@ is_system_service = False
 type = git_repo
 path = ~/crowsnest
 origin = https://github.com/mainsail-crew/crowsnest.git
-
-[update_manager client moonraker-telegram]
-type = git_repo
-path = /home/pi/moonraker-telegram
-origin = https://github.com/Raabi91/moonraker-telegram.git
-env = /home/pi/.moonraker-telegram-env/bin/python
-requirements = scripts/moonraker-telegram-requirements.txt
-install_script = scripts/install.sh
 
 [update_manager KlipperScreen]
 type = git_repo
